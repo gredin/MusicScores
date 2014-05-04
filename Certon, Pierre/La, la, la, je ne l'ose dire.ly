@@ -15,7 +15,7 @@
 global = {
   \key sol \minor
   \time 4/4
-  \tempo "Allegro" 4 = 120
+  \tempo "Presto" 4 = 140
 }
 
 notesA = {
@@ -46,17 +46,15 @@ notesA = {
 
     sol8 sol sol fad sol4 la |
     sib4 la sol2 |
-    sol8 sol sol fad sol2 |
+    sol8 sol sol fad sol2
   }
-
-  \bar "|."
 }
 
 notesB = {
   re,4 re sib sol'8 sol |
   re4 fa8 fa do4 mib4~ |
   mib8 mib re re re4 sib |
-  sol'4 la fa2 |
+  sol'4 fa mib2 |
 
   mib8 mib re re sib4 fa' |
   sol4 fa mib2 |
@@ -76,11 +74,11 @@ notesB = {
     mib4 re sib sol'8 sol |
     re4 fa8 fa do4 mib4~ |
     mib8 mib re re re4 sib |
-    sol'4 la fa2 |
+    sol'4 fa mib2 |
 
     mib8 mib re re sib4 fa' |
     sol4 fa mib2 |
-    mib8 mib re re sib2 |
+    mib8 mib re re sib2
   }
 }
 
@@ -112,7 +110,7 @@ notesC = {
 
     do8 do sib la sol4 re' |
     re4 re sib2 |
-    do8 do sib la sol2 |
+    do8 do sib la sol2
   }
 }
 
@@ -137,14 +135,14 @@ notesD = {
     sol4 sib fa sol |
     re4 mib sib sib |
 
-    do4 re fa,2 |
+    do4 re sol,2 |
     sol'8 sol re4 fa8 fa do4 |
     do8 do sol' sol re4 sol |
     sol4 re mib2 |
 
     do8 do re re sol4 re |
     sol4 re mib2 |
-    do8 do re re sol2 |
+    do8 do re re sol2
   }
 }
 
