@@ -13,6 +13,7 @@ global = {
   \key do \major
   \time 4/4
   \tempo "Moderato" 4 = 90
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

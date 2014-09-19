@@ -18,8 +18,8 @@
 global = {
   \key do \major
   \time 4/4
-  \set Score.tempoHideNote = ##t % hide tempo marking
   \tempo "Allegro" 4 = 120
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 crescendo = ^\markup { \italic { cresc. } }

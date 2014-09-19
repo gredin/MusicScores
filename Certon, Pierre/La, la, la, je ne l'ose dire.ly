@@ -16,6 +16,7 @@ global = {
   \key sol \minor
   \time 4/4
   \tempo "Presto" 4 = 140
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

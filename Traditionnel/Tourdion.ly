@@ -13,6 +13,7 @@ global = {
   \key mi \dorian
   \time 3/2
   \tempo 2 = 150
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

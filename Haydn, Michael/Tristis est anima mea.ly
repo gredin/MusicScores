@@ -13,6 +13,7 @@ global = {
   \key re \minor
   \time 4/4
   \tempo "Adagio" 4 = 60
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

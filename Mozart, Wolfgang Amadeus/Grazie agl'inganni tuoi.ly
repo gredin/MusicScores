@@ -18,6 +18,7 @@ global = {
   \key sib \major
   \time 2/4
   \tempo "Andante" 4 = 60
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

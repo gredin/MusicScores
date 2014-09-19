@@ -17,8 +17,8 @@
 global = {
   \key re \minor
   \time 12/8
-  \set Score.tempoHideNote = ##t % hide tempo marking
   \tempo "Larghetto" 4 = 55
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 crescendo = ^\markup { \italic { cresc. } }

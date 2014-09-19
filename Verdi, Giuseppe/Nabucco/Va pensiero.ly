@@ -18,6 +18,7 @@ global = {
   \key fad \major
   \time 4/4
   \tempo "Largo" 4 = 60
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

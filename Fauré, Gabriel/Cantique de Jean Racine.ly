@@ -13,6 +13,7 @@ global = {
   \key reb \major
   \time 4/4
   \tempo "Andante" 4 = 80
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

@@ -13,6 +13,7 @@ global = {
   \key la \minor
   \time 6/8
   \tempo "Andante" 4 = 75
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

@@ -11,6 +11,7 @@
 global = {
   \key fa \major
   \tempo 4 = 120
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

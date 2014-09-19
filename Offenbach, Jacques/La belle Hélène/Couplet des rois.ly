@@ -13,6 +13,7 @@ global = {
   \key fa \major
   \time 2/4
   \tempo "Allegro" 4 = 120
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 paroles = \lyricmode {

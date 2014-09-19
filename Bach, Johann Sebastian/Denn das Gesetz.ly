@@ -18,6 +18,7 @@ global = {
   \key sol \major
   \time 3/4
   \tempo 4 = 75
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {

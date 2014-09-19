@@ -12,6 +12,7 @@ global = {
   \key sib \major
   \time 4/4
   \tempo 4 = 120
+  \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {
