@@ -18,8 +18,12 @@
 global = {
   \key do \major
   \time 4/4
+  \set Score.tempoHideNote = ##t % hide tempo marking
   \tempo "Allegro" 4 = 120
 }
+
+crescendo = ^\markup { \italic { cresc. } }
+sottoVoce = ^\markup { \italic { sotto voce } }
 
 notesA = {
   \repeat volta 2 {
