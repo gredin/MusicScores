@@ -16,105 +16,113 @@ global = {
 
 notesA = {
   \time 2/4
-  sib4 sib8 sib      | % 1
+  sib4 sib8 sib |
+
   \time 4/4
-  do4. re8 re4 do8 re      | % 2
-  do4 sib sib do8 re      | % 3
-  sol,4 sib la4. sol8      | % 4
-  sol2 sib4 sib8 sib      | % 5
-  do4. re8 re4 do8 re      | % 6
-  do4 sib sib do8 re      | % 7
-  sol,4 sib la4. sol8  | % 8
+  do4. re8 re4 do8 re |
+  do4 sib sib do8 re |
+  sol,4 sib la4. sol8 |
+  sol2 sib4 sib8 sib |
+  do4. re8 re4 do8 re |
+  do4 sib sib do8 re |
+  sol,4 sib la4. sol8 |
+
   \time 2/4
-  sol2      | % 9
-  
-  re'4 do8 sib      | % 10
+  sol2 |
+  re'4 do8 sib |
+
   \time 4/4
-  la4. sib8 do sib la sol      | % 11
-  fad2 sol8 sol sol sol      | % 12
-  sol4 fad sol8 la sib do      | % 13
-  la2 sib8 sib sib sib      | % 14
-  do4 re8. do16 sib8 sib la sol | % 15
-  sol2 r | % 16
-  
+  la4. sib8 do sib la sol |
+  fad2 sol8 sol sol sol |
+  sol4 fad sol8 la sib do |
+  la2 sib8 sib sib sib |
+  do4 re8. do16 sib8 sib la sol |
+  sol2 r |
+
   \bar "|."
 }
 
 notesB = {
   \time 2/4
-  re,4 re8 re      | % 1
+  re,4 re8 re |
+
   \time 4/4
-  fa4. fa8 sol4 mi      | % 2
-  fa re sol8 fa mib re      | % 3
-  mib4 sol sol fad      | % 4
-  sol2 re4 re8 re      | % 5
-  fa4. fa8 sol4 mi      | % 6
-  fa re sol8 fa mib re      | % 7
-  mib4 sol sol fad | % 8
+  fa4. fa8 sol4 mi |
+  fa re sol8 fa mib re |
+  mib4 sol sol fad |
+  sol2 re4 re8 re |
+  fa4. fa8 sol4 mi |
+  fa re sol8 fa mib re |
+  mib4 sol sol fad |
+
   \time 2/4
-  sol2      | % 9
-  
-  sol4 sol8 sol      | % 10
+  sol2 |
+  sol4 sol8 sol |
+
   \time 4/4
-  fa4. fa8 fa fa fa do      | % 11
-  re2 re8 re do do      | % 12
-  re4 re re8 fa re sol      | % 13
-  fad2 sol8 sol re re      | % 14
-  sol4 fad8. fad16 sol8 sol re re | % 15
-  re2 r | % 16
-  
+  fa4. fa8 fa fa fa do |
+  re2 re8 re do do |
+  re4 re re8 fa re sol |
+  fad2 sol8 sol re re |
+  sol4 fad8. fad16 sol8 sol re re |
+  re2 r |
+
   \bar "|."
 }
 
 notesC = {
   \time 2/4
-  sib4 sib8 sib      | % 1
+  sib4 sib8 sib |
+
   \time 4/4
-  la4. la8 sib4 sol      | % 2
-  la sib sol sol8 sol      | % 3
-  do4 re re re      | % 4
-  sib2 sib4 sib8 sib      | % 5
-  la4. la8 sib4 sol      | % 6
-  la sib sol sol8 sol      | % 7
-  do4 re re re | % 8
+  la4. la8 sib4 sol |
+  la sib sol sol8 sol |
+  do4 re re re |
+  sib2 sib4 sib8 sib |
+  la4. la8 sib4 sol |
+  la sib sol sol8 sol |
+  do4 re re re |
+
   \time 2/4
-  sib2      | % 9
-  
-  re4 mib8 re      | % 10
+  sib2 |
+  re4 mib8 re |
+
   \time 4/4
-  re4. re8 la re do sol      | % 11
-  la2 sol8 sol sol sol      | % 12
-  sol4 la sib8 do sib mib      | % 13
-  re2 re8 re sib sib      | % 14
-  sol4 la8. la16 sol8 sol fad fad | % 15
-  sol2 r | % 16
-  
+  re4. re8 la re do sol |
+  la2 sol8 sol sol sol |
+  sol4 la sib8 do sib mib |
+  re2 re8 re sib sib |
+  sol4 la8. la16 sol8 sol fad fad |
+  sol2 r |
+
   \bar "|."
 }
 
 notesD = {
   \time 2/4
-  sol4 sol8 sol      | % 1
+  sol4 sol8 sol |
+
   \time 4/4
-  fa4. re8 sol4 do,      | % 2
-  fa sib, mib8 re do sib      | % 3
-  do4 sol re' re      | % 4
-  sol,2 sol'4 sol8 sol      | % 5
-  fa4. re8 sol4 do,      | % 6
-  fa sib, mib8 re do sib      | % 7
-  do4 sol re' re | % 8
+  fa4. re8 sol4 do, |
+  fa sib, mib8 re do sib |
+  do4 sol re' re |
+  sol,2 sol'4 sol8 sol |
+  fa4. re8 sol4 do, |
+  fa sib, mib8 re do sib |
+  do4 sol re' re |
+
   \time 2/4
-  sol,2      | % 9
-  
-  sol'4 do,8 sol      | % 10
+  sol,2 |
+  sol'4 do,8 sol |
+
   \time 4/4
-  re'4. sib8 fa' fa fa mib      | % 11
-  re2 sol8 sol do, do      | % 12
-  sol4 re' sol8 fa sol do,      | % 13
-  re2 sol8 sol sol fa      | % 14
-  mib4 re8. re16 sol,8 sol re' re | % 15
-  sol,2 r | % 16
-  
+  re'4. sib8 fa' fa fa mib |
+  re2 sol8 sol do, do |
+  sol4 re' sol8 fa sol do, |
+  re2 sol8 sol sol fa |
+  mib4 re8. re16 sol,8 sol re' re |
+  sol,2 r |
+
   \bar "|."
 }
 
