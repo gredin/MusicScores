@@ -14,103 +14,85 @@
 
 global = {
   \key do \major
-  \time 3/2
-  \tempo 2 = 140
+  \time 3/4
+  \tempo 4 = 120
   \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
 notesA = {
-  \partial 2 la2
+  \partial 4 la4
   do do si |
   sol sol mi |
   la la fa |
-  re1 la'2 |
+  re2 la'4 |
   la sold sold |
-  la1. |
-  
-  r1 la2 |
+  la2 \breathe la4 |
   do do si |
   sol sol mi |
   la la sold |
-  la la r |
-  
-  r1 la2 |
+  la la \breathe la |
   do do si |
   sol sol mi |
   la la sold |
-  la la r |
-  
-  r1 la2 |
+  la la \breathe la |
   do do si |
   sol sol mi |
   la la fa |
-  re1 la'2 |
+  re2 la'4 |
   la sold sold |
-  la1 r2 |
+  la2 r4 |
 
   \bar "|."
 }
 
 notesB = {
-  \partial 2 la2 |
+  \partial 4 la4 |
   mi' do re |
   mi si do |
   do do re |
-  si1 do2 |
+  si2 do4 |
   la si si |
-  la1. |
-  
-  r1 la2 |
+  la2 \breathe la4 |
   mi' do re |
   mi si do |
   do la si |
-  la la r |
-  
-  r1 la2 |
+  la la \breathe la |
   mi' do re |
   mi si do |
   do la si |
-  la la r |
-  
-  r1 la2 |
+  la la \breathe la |
   mi' do re |
   mi si do |
   do do re |
-  si1 do2 |
+  si2 do4 |
   la si si |
-  la1 r2 |
+  la2 r4 |
   
   \bar "|."
 }
 
 notesD = {
-  \partial 2 la2 |
+  \partial 4 la4 |
   la la sol |
   mi mi do |
   fa fa re |
-  sol1 fa2 |
+  sol2 fa4 |
   fa mi mi |
-  la,1. |
-  
-  r1 la'2 |
+  la,2 \breathe la'4 |
   la la sol |
   mi mi do |
   fa fa mi |
-  la, la r |
-  
-  r1 la'2 |
+  la, la \breathe la' |
   la la sol |
   mi mi do |
   fa fa mi |
-  la, la r |
-  
-  r1 la'2 |
+  la, la \breathe la' |
   la la sol |
   mi mi do |
   fa fa re |
-  sol1 fa2 |
+  sol2 fa4 |
   fa mi mi |
-  la,1 r2 |
+  la,2 r4 |
 
   \bar "|."
 }
@@ -120,10 +102,6 @@ lyricsA = \lyricmode {
 }
 
 lyricsB = \lyricmode {
-
-}
-
-lyricsC = \lyricmode {
 
 }
 

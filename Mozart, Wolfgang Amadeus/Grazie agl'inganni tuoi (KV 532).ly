@@ -10,7 +10,7 @@
   poet = "Metastasio"
   title = "Grazie agl'inganni tuoi"
   subtitle = "d'après une mélodie de Michael Kelly"
-  opus = "K. 532"
+  opus = "KV 532"
   tagline = "" % no footer
 }
 

@@ -20,9 +20,6 @@ global = {
   \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
-crescendo = ^\markup { \italic { cresc. } }
-sottoVoce = ^\markup { \italic { sotto voce } }
-
 notesA = {
   do2 sib4
   sol4 |
@@ -31,7 +28,7 @@ notesA = {
   sol4 la4 sib4 re4 |
   do2 re8 do8 sib8 la8 |
   la2 sol2 |
-  R1 |
+  r1 |
   do2 sib4 sol4 |
   mi2 fa4 r4 |
   r4 fad4 sol4 sib4 |
@@ -57,7 +54,7 @@ notesA = {
     sol4 la4 sib4 re4 |
     do2 re8 do8 sib8 la8 |
     la2 sol2 |
-    R1 |
+    r1 |
     do2 sib4 sol4 |
     mi2 fa4 r4 |
     r4 fad4 sol4 sib4 |
@@ -82,7 +79,7 @@ notesB = {
   sol4 la4 sib4 re4 |
   do2 re8 do8 sib8 la8 |
   la2 sol2 |
-  R1 |
+  r1 |
   do2 sib4 sol4 |
   mi2 fa4 r4 |
   r4 fad4 sol4 sib4 |
@@ -108,7 +105,7 @@ notesB = {
     sol4 la4 sib4 re4 |
     do2 re8 do8 sib8 la8 |
     la2 sol2 |
-    R1 |
+    r1 |
     do2 sib4 sol4 |
     mi2 fa4 r4 |
     r4 fad4 sol4 sib4 |
@@ -129,7 +126,7 @@ notesC = {
   la2 sol2 |
   
   \repeat volta 2 {
-    R1 |
+    r1 |
     do2 sib4 sol4 |
     mi2 fa4 r4 |
     r4 fad4 sol4 sib4 |
@@ -168,7 +165,7 @@ notesD = {
     sol4 la4 sib4 re4 |
     do2 re8 do8 sib8 la8 |
     la2 sol2 |
-    R1 |
+    r1 |
     do2 sib4 sol4 |
     mi2 fa4 r4 |
     r4 fad4 sol4 sib4 |

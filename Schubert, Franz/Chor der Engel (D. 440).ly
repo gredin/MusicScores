@@ -9,7 +9,7 @@
   composer = "Franz Schubert"
   poet = "J. W. von Goethe"
   title = "Chor der Engel"
-  opus = "D 440"
+  opus = "D. 440"
   tagline = "" % no footer
 }
 
