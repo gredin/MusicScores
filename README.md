@@ -8,6 +8,4 @@ PDF files and synthetized audio files (based on MIDI files) are available at: [l
 Notation software
 -----------------
 
-*.ly* files are [Lilypond](http://www.lilypond.org) scores (edited with [Frescobaldi](http://frescobaldi.org)).
-
-*.mscz* files are [MuseScore](http://musescore.org) scores.
+Present scores (*.ly* files) are engraved with [Lilypond](http://www.lilypond.org) and edited with [Frescobaldi](http://frescobaldi.org)).
