@@ -136,12 +136,73 @@ lyricsD = \lyricmode {
     >>
   >>
 
-  \midi { }
-
   \layout {
     \context {
-        \Voice
-        \consists Ambitus_engraver % display ambitus
+      \Voice
+      \consists Ambitus_engraver % display ambitus
     }
   }
+}
+
+\score {
+  \new ChoirStaff <<
+    \new Staff <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "Soprano" <<
+        \global
+        \set Staff.instrumentName = #"Soprano"
+        \set Staff.shortInstrumentName = #"S."
+        \relative do'' {
+          \clef treble
+          \unfoldRepeats {
+            \notesA
+          }
+        }
+      >>
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "Alto" <<
+        \global
+        \set Staff.instrumentName = #"Alto"
+        \set Staff.shortInstrumentName = #"A."
+        \relative la' {
+          \clef treble
+          \unfoldRepeats {
+            \notesB
+          }
+        }
+      >>
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "Ténor" <<
+        \global
+        \set Staff.instrumentName = #"Ténor"
+        \set Staff.shortInstrumentName = #"T."
+        \relative do' {
+          \clef "G_8"
+          \unfoldRepeats {
+            \notesC
+          }
+        }
+      >>
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "Basse" <<
+        \global
+        \set Staff.instrumentName = #"Basse"
+        \set Staff.shortInstrumentName = #"B."
+        \relative do' {
+          \clef bass
+          \unfoldRepeats {
+            \notesD
+          }
+        }
+      >>
+    >>
+  >>
+
+  \midi { }
 }

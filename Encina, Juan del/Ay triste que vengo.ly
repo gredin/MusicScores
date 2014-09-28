@@ -27,14 +27,14 @@ notesA = {
   re2 la'4 |
   la sold sold |
   la2 \breathe la4 |
-  do do si |
-  sol sol mi |
-  la la sold |
-  la la \breathe la |
-  do do si |
-  sol sol mi |
-  la la sold |
-  la la \breathe la |
+
+  \repeat volta 2 {
+    do do si |
+    sol sol mi |
+    la la sold |
+    la la \breathe la |
+  }
+
   do do si |
   sol sol mi |
   la la fa |
@@ -53,21 +53,21 @@ notesB = {
   si2 do4 |
   la si si |
   la2 \breathe la4 |
-  mi' do re |
-  mi si do |
-  do la si |
-  la la \breathe la |
-  mi' do re |
-  mi si do |
-  do la si |
-  la la \breathe la |
+
+  \repeat volta 2 {
+    mi' do re |
+    mi si do |
+    do la si |
+    la la \breathe la |
+  }
+
   mi' do re |
   mi si do |
   do do re |
   si2 do4 |
   la si si |
   la2 r4 |
-  
+
   \bar "|."
 }
 
@@ -79,14 +79,14 @@ notesD = {
   sol2 fa4 |
   fa mi mi |
   la,2 \breathe la'4 |
-  la la sol |
-  mi mi do |
-  fa fa mi |
-  la, la \breathe la' |
-  la la sol |
-  mi mi do |
-  fa fa mi |
-  la, la \breathe la' |
+
+  \repeat volta 2 {
+    la la sol |
+    mi mi do |
+    fa fa mi |
+    la, la \breathe la' |
+  }
+
   la la sol |
   mi mi do |
   fa fa re |
@@ -158,12 +158,59 @@ lyricsD = \lyricmode {
     >>
   >>
 
-  \midi { }
-
   \layout {
     \context {
       \Voice
       \consists Ambitus_engraver % display ambitus
     }
   }
+}
+
+\score {
+  \new ChoirStaff <<
+    \new Staff <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "Soprano" <<
+        \global
+        \set Staff.instrumentName = #"Soprano"
+        \set Staff.shortInstrumentName = #"S."
+        \relative do'' {
+          \clef treble
+          \unfoldRepeats {
+            \notesA
+          }
+        }
+      >>
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "Alto" <<
+        \global
+        \set Staff.instrumentName = #"Alto"
+        \set Staff.shortInstrumentName = #"A."
+        \relative la' {
+          \clef treble
+          \unfoldRepeats {
+            \notesB
+          }
+        }
+      >>
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "Basse" <<
+        \global
+        \set Staff.instrumentName = #"Basse"
+        \set Staff.shortInstrumentName = #"B."
+        \relative do' {
+          \clef bass
+          \unfoldRepeats {
+            \notesD
+          }
+        }
+      >>
+    >>
+  >>
+
+  \midi { }
 }
