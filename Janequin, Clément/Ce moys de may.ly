@@ -7,7 +7,7 @@
 
 \header {
   composer = "Clément Janequin"
-  title = "Ce moys de mays"
+  title = "Ce moys de may"
   tagline = "" % no footer
 }
 
