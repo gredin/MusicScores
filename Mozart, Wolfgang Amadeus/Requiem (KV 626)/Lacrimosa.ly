@@ -31,7 +31,7 @@ notesA = {
   la8 r8 r8 si8 r8 r8 do8 r8 r8 re8 r8 r8 |
   mib4. mi4. fa4. \crescendo fad4. |
   sol4. \f sold4. la4. la,8 r8 r8 |
-  la4. \p \sottoVoce ~ la8 ( sib8 ) la8 la4. ~ la8 ( fa'8 ) re8 |
+  la4. \sottoVoce ~ la8 ( sib8 ) la8 la4. ~ la8 ( fa'8 ) re8 |
   dod4. ~ dod8 ( re8 ) mi8 mi4. re4 r8 |
   mib4. \f ~ mib8 ( fa8 ) mib8 mib4. re8 r8 r8 |
   re4. ~ re8 ( fa8 ) mi8 mi4. re8 r8 r8 |
@@ -63,7 +63,7 @@ notesB = {
   fa8 r8 r8 si,8 r8 r8 mi8 r8 r8 sol8 r8 r8 |
   sol4. sol4. fa4. \crescendo la4. |
   sol4. \f re'4. re4. dod8 r8 r8 |
-  sol4. \p \sottoVoce ~ sol4 sol8 fa4. ~ fa8 ( re8 ) la'8 |
+  sol4. \sottoVoce ~ sol4 sol8 fa4. ~ fa8 ( re8 ) la'8 |
   sol4. ~ sol4 dod,8 la'4. fa4 r8 |
   sib4. \f ~ sib8 ( sol8 ) sib8 sib4. sib8 r8 r8 |
   la4. ~ la4 sol8 fa4. ~ fa8 ( sib8 ) lab8 |
@@ -95,7 +95,7 @@ notesC = {
   do8 r8 r8 sold8 r8 r8 la8 r8 r8 si8 r8 r8 |
   do4. do4. do4. \crescendo mib4. |
   re4. \f fa4. fa4. mi8 r8 r8 |
-  mi4. \p \sottoVoce ~ mi8 ( re8 ) dod8 re4. ~ re8 ( la8 ) fa8 |
+  mi4. \sottoVoce ~ mi8 ( re8 ) dod8 re4. ~ re8 ( la8 ) fa8 |
   sib4. ~ sib8 ( la8 ) la8 la4. la4 r8 |
   mib'4. \f ~ mib8 ( sib8 ) sol'8 fa4. fa8 r8 r8 |
   fa4. ~ fa8 ( re8 ) la8 re4. re8 r8 r8 |
@@ -127,7 +127,7 @@ notesD = {
   fa8 r8 r8 mi8 r8 r8 la,8 r8 r8 sol8 r8 r8 |
   do4. sib'4. la4. \crescendo do4. |
   si4. \f sib4. la4. la8 r8 r8 |
-  dod,4. \p \sottoVoce la4. re4. la4. |
+  dod,4. \sottoVoce la4. re4. la4. |
   mi'4. la,4. fa'4. la,4. |
   sol'4. \f sol,4. lab4. lab'4. |
   la4. la,4. sib4. sib'4. |
