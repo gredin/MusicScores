@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.16.2"
 \language "italiano"
 
 \paper {
@@ -9,6 +9,8 @@
   composer = "Gabriel Fauré"
   poet = "Armand Silvestre"
   title = "Madrigal"
+  subtitle = "à 4 voix (soli ou chœur)"
+  dedication = "à André Messager"
   opus = "Op. 35"
   tagline = "" % no footer
 }
@@ -152,7 +154,8 @@ notesA = {
   fad2. ~ |
   fad2. |
   re2. ~ |
-  re2.
+  re2. |
+  r2.
 
   \bar "|."
 }
@@ -286,7 +289,8 @@ notesB = {
   re2. ~ |
   re2. |
   re2. ~ |
-  re2.
+  re2. |
+  r2.
 
   \bar "|."
 }
@@ -406,7 +410,7 @@ notesC = {
   la8 ( si8 ) dod8 ( re8 ) mi8 dod8 |
   re2 dod4 |
   do4 r2 |
-  re8 dod8 sol8 ( fad8 mi4 ) |
+  re8 dod8 si8 ( la8 sol4 ) |
   fad2. ~ |
   fad4 r4 la4 |
   la2 ( sib4 ) |
@@ -420,7 +424,8 @@ notesC = {
   la2. ~ |
   la2. |
   fad2. ~ |
-  fad2.
+  fad2. |
+  r2.
 
   \bar "|."
 }
@@ -482,11 +487,11 @@ notesD = {
   r2. |
   r2. |
   r2 do,4 |
-  fa2 ( mi4 ) |
+  fa2 ( mib4 ) |
   re4 re4 re4 |
   re2. |
   do2 do4 |
-  fa2 ( mi4 ) |
+  fa2 ( mib4 ) |
   re4 re4 re4 |
   re2. |
   do2 do4 |
@@ -523,7 +528,7 @@ notesD = {
   do'4 re4 do8 la8 |
   fa4 sol8 la8 la4 ~ |
   la2. ~ |
-  la2 r4 |
+  la4 r2 |
   do4 re4 do8 la8 |
   fa4 sol8 la8 la4 ~ |
   la2. ~ |
@@ -540,8 +545,8 @@ notesD = {
   fad4 fad4 sol4 |
   fad2 fad4 |
   mi4 r2 |
-  r2 re,4 |
-  re'2. |
+  r2 la,4 |
+  re2. |
   re2 re4 |
   re2. ~ |
   re2 r4 |
@@ -554,7 +559,8 @@ notesD = {
   re2. ~ |
   re2. |
   re2. ~ |
-  re2.
+  re2. |
+  r2.
 
   \bar "|."
 }
