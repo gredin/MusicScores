@@ -82,7 +82,7 @@ melody = {
   lab8 ^\markup { \bold "Céder un peu" } mib' reb4 reb8 solb, |
   solb8 reb' dob4 dob8 r8 |
   sib8 ^\mf ^\aTempo ^\< sib mib4 re8 re \! |
-  reb8 ^\pianoSubito ^\> reb \! lab'4 \fermata ( ^\pp ^\markup { \bold "molto portando" } do,8 ) r8 |
+  reb8 ^\> ^\p ^\markup { \bold "Céder" } reb \! lab'4 _\fermata ( ^\pp do,8 ) r8 |
   r8 ^\mf ^\aTempo mib8 si do la ^\> sib |
   mib,8 ^\markup { \bold "Céder" } fab \! dob'4~ dob8 r8 |
   r2.
@@ -111,7 +111,7 @@ text = \lyricmode {
   Et les ar -- mes dé -- sa -- mor -- cé -- es
   Et les lar -- mes mal ef -- fa -- cé -- es
 
-  O ma France, o ma dé -- lais -- sée
+  O ma France, o ma dé -- lais -- sé __ e
 
   J'ai tra -- ver -- sé les ponts de Cé __
 }
@@ -123,17 +123,16 @@ upper = \relative do'' {
   s2. |
   s4 s4 s4 _\> ^\markup { \bold "Céder à peine" } |
   s4 s4 \! s4 |
-  s2. | % 5
+  s2. ^\aTempo | % 5
   r4 r4 r8 reb8 _\mf ^( |
   lab4. ) dob8 ^( sib _\> lab |
-  solb8 fab \! mib4 ) r8 |
+  solb8 fab \! mib4 ) r8
 
   <<
     {
       \voiceOne
       
-      %\stemUp \slurUp
-      dob'8 ^( |
+      dob'8 ^(
       reb8 lab dob4 ) mib ^( |
       reb8 lab dob4 ) mib ^( | % 10
       solb,4  ^\markup { \italic "très lié" } lab reb |
@@ -145,7 +144,7 @@ upper = \relative do'' {
       do2 ) sib4 ^( |
       do2 ) mib4 ^( |
       dob2 ) sol4 ^( |
-      sib2 ) ^( sib8 ) \breathe sib8 ^( | % 20
+      sib2 ) ^( <reb, sib'>8 ) \breathe sib'8 ^( | % 20
       sib8 fa' mib4. ) lab,8 |
       r8 <lab' dob mib> ^( <fa lab reb>4. ) lab,8 ^( |
       lab8 mib' reb4. ) solb,8 |
@@ -164,22 +163,21 @@ upper = \relative do'' {
       solb8 reb' dob2 ) |
       mib,4 ^( sol sib ) |
       reb4 ^( <do solb'>2 \fermata ) |
-      r8 <mib, lab> ^( <sol si> <solb do> <fa sol> <fab sib> |
+      r8 <mib, lab> ^( <sol si> <solb do> <fa la> <fab sib> |
       <sib, mib>8 ^\markup { \bold "Céder" } <dob fab> <fab dob'>2 ) \breathe |
       
       \clef bass
       do2. \fermata
-    }
-    \\
+    } \\
     {
       \voiceTwo
       
-      <mib lab>8 |
+      <mib lab>8
       <reb lab'>8 <reb fab> <dob mib> <dob mib> <mib lab> <mib lab> |
       <reb lab'>8 <reb fab> <dob mib> <dob mib> <mib lab> <mib lab> | % 10
       <lab, reb>8 <lab reb> <dob fab> <dob fab> <reb fab> <reb fab> |
       <reb mib>8 <reb mib>4 <reb mib>8 \breathe mib mib |
-      fab8 <dob fab~>4 fab8 solb4 |
+      fab8 <dob fab^~>4 fab8 solb4 |
       lab8 <mib lab>4 lab8 lab <re, lab'> |
       sib'8 <fa sib> s8 sib s4 | % 15
       sib8 sib4 sib8 fa8 fa |
@@ -198,7 +196,7 @@ upper = \relative do'' {
       <lab reb>8 <lab reb>8 <reb lab'>8 <reb lab'>4 <reb lab'>8 |
       <lab reb>8 <lab reb>8 <reb lab'>8 <reb lab'>4 <reb lab'>8 |
       <sib re>8 <sib re>8 <dob re>8 <dob re>8 <dob re>4 |
-      <sol reb' fab>8 <sol reb' fab>4 <sol reb' fab>4 ^\> <sol reb' fab>8 |
+      <sol reb' fab>8 <sol reb' fab>4 ^\> <sol reb' fab>4 <sol reb' fab>8 |
       sib'8 \! fa' <mib solb sib> <mib solb sib> <mib lab> r |
       r8 <mib, solb> <reb fa lab> <reb fa lab>4 <reb fa>8 |
       lab'8 mib' <reb fab lab> <reb fab lab> <reb solb> r |
@@ -210,6 +208,20 @@ upper = \relative do'' {
       
       \clef bass
       <fab, sol>4 ^\markup { \bold "Céder encore" } <do mib>2 ^\fermata |
+    } \\
+    {
+      \voiceThree
+      s8
+      s2. |
+      s2. |
+      s2. |
+      s2. |
+      s2. |
+      s2. |
+      s2. |
+      s2. |
+      lab''4 sol s4 |
+      lab4 sol s4 |
     }
   >>
 
@@ -219,11 +231,11 @@ upper = \relative do'' {
 lower = \relative do {
   \set Timing.beamExceptions = #'()
   
-  r8 ^\mf mib ^( lab[ dob] |
+  r8 ^\mf mib ^( lab[ dob]
   \change Staff = "upper"
-  mib8 _\< lab |
+  mib8 _\< lab
   dob8 ^\markup { \italic "sempre m.g." } sib \! lab mib solb fab |
-  mib8 sib |
+  mib8 sib
   \change Staff = "lower"
   dob8 lab fab mib |
   sib8 dob sol lab fab mib ) |
@@ -241,13 +253,13 @@ lower = \relative do {
       dob,8 dob lab' lab lab lab |
       lab8 lab4 sol8 lab lab |
       sol8 sol4 sol8 ^\< sibb sibb |
-      lab8 lab4 \! lab8 dob4 |
+      lab8 lab4 \! lab8 dob4 ^\f |
       reb8 reb4 reb8 <lab do>8 <sib reb> |
       fa'8 fa4 mi8 sib8 ^\sempref sib |
       sib8 sib4 sib8 sib sib |
       sib8 sib4 sib8 lab lab |
-      lab8 lab4 ^\> lab8 dob ^( lab \! ) |
-      lab8 lab4 lab8 ^( sol4 ) |
+      lab8 lab4 ^\> lab8 dob _( lab \! ) |
+      lab8 lab4 lab8 _( sol4 ) |
       r8 ^\ppp <mib solb sib> _\markup { \italic "doucement effleuré" } <sib' reb> <sib reb> do lab |
       r8 <solb dob mib> ^( reb' lab' lab,8 ) r8 |
       r8 <reb, fab lab> <lab' dob> <lab dob> sib solb |
@@ -258,15 +270,15 @@ lower = \relative do {
       solb,4 lab2 ^\> |
       reb,8 \! \p reb fab'8 fab lab, lab |
       mibb8 mibb mibb' mibb fab, fab |
-      sib,8 ^\mf ^\< sib lab' \! lab fab ^( dob ) |
+      sib,8 ^\mf ^\< sib lab' \! lab fab _( dob ) |
       r4 ^\f mib' ^( mib, ) |
       r8 ^\ppp <mib solb sib reb>8 <reb' mib solb sib> <reb mib solb sib> <do mib solb> r8 |
       r8 <solb lab dob> <fa lab dob> <fa lab dob> reb'4 |
       r8 <fab, lab dob reb> <lab dob reb fab> <lab dob reb fab> <sib reb solb> r8 |
       r8 <solb sibb> <sibb dob> <sibb dob>4 <solb sibb>8 |
-      sol8 ^\mf sol sib sib mib mib |
+      sol8 ^\mf sol ^\< sib sib mib \! mib |
       mibb8 mibb s2 |
-      r8 ^\mf dob fab mib re reb |
+      r8 ^\mf dob fab mib ^\> re reb \! |
       sol,8 lab reb2 ^\p |
       r4 ^\p ^\> r4 lab4 \! \fermata ^\pp |
 
@@ -275,9 +287,9 @@ lower = \relative do {
       \voiceTwo
       
       lab,,2.~ |
-      lab4~ lab8  mib'' _( lab,4 ) |
+      lab4~ lab8  mib'' ^( lab,4 ) |
       s2. |
-      s4 r8 mib _( lab,4 ) |
+      s4 r8 mib ^( lab,4 ) |
       s2. |
       s2 dob'4 |
       fab,4 dob' sib |
