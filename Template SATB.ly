@@ -22,8 +22,8 @@ global = {
   \set Score.tempoHideNote = ##t % hide tempo marking
 }
 
-crescendo = ^\markup { \italic { cresc. } }
-sottoVoce = ^\markup { \italic { sotto voce } }
+crescendo = \markup { \italic { cresc. } }
+sottoVoce = \markup { \italic { sotto voce } }
 
 notesA = {
   \repeat volta 2 {
