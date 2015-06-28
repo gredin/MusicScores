@@ -1,8 +1,8 @@
-\version "2.16.2"
+\version "2.18.2"
 \language "italiano"
 
 \paper {
-  system-system-spacing #'padding = #5
+  system-system-spacing #'padding = #4
 }
 
 \header {
@@ -73,19 +73,66 @@ text = \lyricmode {
   laß die _ Trä -- nen dich _ er -- _ wei -- "chen," _
   laß sie dir zu Her -- _ zen _ rei -- "chen;" _
   er -- bar -- _ _ _ _ _ _ _ _ _ _ me, er -- bar -- me -- _ dich!
-  
+
   Er -- bar -- _ me _ dich, __
   er -- _ _ bar -- _ _ me, er -- bar -- _ me dich,
   laß, um Je -- su _ Chri -- sti wil -- len, _
   dei -- nen Zorn des Ei -- _ fers _ stil -- len;
   er -- bar -- me dich, er -- bar -- me dich,
   er -- _ _ bar -- me _ dich!
-  
+
   Laß, um _ _ Je -- su Chri -- _ sti _ wil -- _ len, _
   dei -- _ nen _ Zorn _ des _ Ei -- _ fers _ stil -- _ len;
   er -- bar -- me _ dich, er -- bar -- me _ dich,
   er -- bar -- _ me _ dich, er -- bar -- _ _ _ _ _ _ _ _ _ _ me
   er -- bar -- _ me _ dich!
+}
+
+flauto = {
+  \partial 8 la8 |
+  fa'8 ( mib4 ) re16 dod re8 sib'4 la16 sold |
+  la16 re, ( dod re mi fa sol ) mi dod!8 la r32 mi' ( fa sol la sib do16 ) |
+  mib,16 ( re ) re ( dod ) re32 ( fad mi re do re fad la ) sib4~ sib32 la sol fa mi fa sol mi |
+  reb16 ( do ) do ( si ) do32 ( mi re do sib do mi sol ) la4~ la32 ( sol fa mi re fa mi re ) |
+  sol16 ( fad ) fad ( sol ) sol32 ( la sib dod re16 ) fa, mib16 ( re ) re ( mib ) mib32 ( sol sib dod! re16 ) re, |
+  dod32 sib' la sol fa mi fa sol dod,!8. re16 re4 r |
+  r4 r8 la'8 re16 do sib4 la16 sold |
+  la16 fa mi fa sol la sib sol mi sol fa mi re dod si la |
+  fa'8 mib~ mib re16 dod re8 sib'~ sib la16 sold |
+  la16 re, ( dod re mi fa sol ) mi dod!8 la r32 mi' ( fa sol la sib do!16 ) |
+  mib,16 ( re ) re ( dod ) re8 r r32 do ( re mib! re do sib la ) sib ( re mi fa sol la sib16 ) |
+  reb,16 ( do ) do ( si ) do8 r r32 sib ( do re do sib la sol ) la ( do re mi fa sol la16 ) |
+  re,16 ( dod ) re ( dod ) re32 ( mi fa sold la16 ) do, sib ( la ) sib ( la ) sib32 ( re fa sold! la16 ) la, |
+  sold8 r r4 r r8 mi |
+  do'8 sib4 la16 sold la8 fa'4 mi16 red |
+  mi16 la, ( sold la si do re ) si sold!8 mi r32 si'!32 ( do re mi fa sol!16 ) |
+  sib,16 ( la ) la ( sold ) la32 ( dod si la sol la dod mi ) fa4~ fa32 mi re do si! do re si |
+  lab16 ( sol ) sol ( fad ) sol32 ( si la sol fa sol si re ) mi4~ mi32 re do si! la do si la |
+  re16 ( dod ) dod ( re ) re32 ( mi fa sold la16 ) do, sib16 ( la ) la ( sib ) sib32 ( re fa sold! la16 ) la, |
+  sold32 fa' ( mi re do si do re ) sold,8. la16 la16. si!32 ( dod re mi fa ) sol! ( sib! la sol fa mi re dod! ) |
+  re16 ( dod ) dod ( re ) re ( mi ) mi ( fa ) fa ( mi ) mi ( fad ) sol ( la ) la ( sib ) |
+  sib ( la ) la ( sib ) sib ( fad ) fad ( sol ) sol4~ sol16 la32 sib la16 sol |
+  fad8 la~ la16 sol fad! sol fad4 r8 re |
+  sib'8 lab4 sol16 fad sol8 fa4 mib16 re |
+  mib2~ mib32 fad sol la sol fad mi re mi fad sol la sib do re16~ |
+  re16 sol, ( lab sol ) sol ( fad ) fad ( sol ) sol4~ sol16 la32 ( sib la sol fad! sol ) |
+  la8 r r re, sib' lab4 sol16 fad |
+  sol fa mib4 re16 dod re sol, ( fad sol la sib do la ) |
+  fad8 mi16 re r8 fad' sol16 ( fad ) fad (sol ) sol4~ |
+  sol16 sold sold ( la ) la4~ la16 mi mi ( fa ) fa4~ |
+  fa4 r r r8 la |
+  re16 do sib4 la16 sold la2~ |
+  la16 la, la sold la32 ( dod si la sol la dod ) mi fa16 ( re ) re ( dod! ) re32 ( fa mi re do re fad la ) |
+  sib16 ( fad ) fad ( sol ) sol32 ( la sib dod re16 ) fa, mib ( re ) re ( mib ) mib32 ( sol sib dod! re16 ) re, |
+  dod8 r r4 r r8 la |
+  fa'8 ( mib4 ) re16 dod re8 sib'4 la16 sold |
+  la16 re, ( dod re mi fa sol ) mi dod!8 la r32 mi' ( fa sol la sib do!16 ) |
+  mib,16 ( re ) re ( dod ) re32 ( fad mi re do re fad la ) sib4~ sib32 la sol fa mi fa sol mi |
+  reb16 ( do ) do ( si ) do32 ( mi re do sib do mi sol ) la4~ la32 ( sol fa mi re fa mi re ) |
+  sol16 ( fad ) fad ( sol ) sol32 ( la sib dod re16 ) fa, mib16 ( re ) re ( mib ) mib!32 ( sol sib dod! re16 ) re, |
+  dod32 sib' la sol fa mi fa sol dod,!8. re16 re4 r |
+
+  \bar "|."
 }
 
 continuo = {
@@ -136,36 +183,47 @@ continuo = {
 
 \score {
   <<
-    \new Voice = "Voice" <<
+    \new Voice <<
       \global
-      \set Staff.instrumentName = #"Tenor"
+      \set Staff.instrumentName = #"Tenore"
       \set Staff.midiInstrument = #"clarinet"
-      \relative do' {
-        \clef "G_8"
-        \voice
+      \transpose re do {
+        \relative do' {
+          \clef "G_8"
+          \voice
+        }
       }
       \addlyrics {
-          \text
-        }
-    >>
-    \new Voice = "Continuo" <<
-      \global
-      \set Staff.instrumentName = #"Continuo"
-      \set Staff.midiInstrument = #"contrabass"
-      \relative do {
-        \clef bass
-        \continuo
+        \text
       }
+    >>
+    \new PianoStaff <<
+      \new Staff = "upper" \transpose re do {
+        \relative do'' <<
+          \global
+          \clef treble
+          \flauto
+        >>
+      }
+      \new Staff = "lower" \transpose re do {
+        \relative do <<
+          \global
+          \clef bass
+          \continuo
+        >>
+      }
+      \set Staff.midiInstrument = #"piano"
     >>
   >>
 
   \layout {
     \context {
-      \Voice
-      \consists Ambitus_engraver % display ambitus
+      \Score
+      \override SpacingSpanner.common-shortest-duration =
+      #(ly:make-moment 1/2)
     }
   }
-  
+
   \midi { }
 }
 
