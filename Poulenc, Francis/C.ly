@@ -111,7 +111,7 @@ text = \lyricmode {
   Et les ar -- mes dé -- sa -- mor -- cé -- es
   Et les lar -- mes mal ef -- fa -- cé -- es
 
-  O ma France, o ma dé -- lais -- sé __ e
+  O ma France, o ma dé -- lais -- \set ignoreMelismata = ##t sé -- e \unset ignoreMelismata
 
   J'ai tra -- ver -- sé les ponts de Cé __
 }
