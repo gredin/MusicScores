@@ -4,19 +4,20 @@
 % http://imslp.org/wiki/Rodelinda,_regina_de'_Longobardi,_HWV_19_(Handel,_George_Frideric)
 
 % script based on code published at http://lilypondblog.org/2014/03/music-functions-2-start-doing-something-useful/
+customColor = #(rgb-color 0.96 0.43 0.16)
 color =
 #(define-music-function (parser location music)
    (ly:music?)
    #{
-     \temporary \override Accidental.color = #(x11-color 'DarkOrange)
-     \temporary \override Dots.color = #(x11-color 'DarkOrange)
-     \temporary \override NoteHead.color = #(x11-color 'DarkOrange)
-     \temporary \override Stem.color = #(x11-color 'DarkOrange)
-     \temporary \override Tie.color = #(x11-color 'DarkOrange)
-     \temporary \override TrillSpanner.color = #(x11-color 'DarkOrange)
-     
+     \temporary \override Accidental.color = \customColor
+     \temporary \override Dots.color = \customColor
+     \temporary \override NoteHead.color = \customColor
+     \temporary \override Stem.color = \customColor
+     \temporary \override Tie.color = \customColor
+     \temporary \override TrillSpanner.color = \customColor
+
      $music
-     
+
      \revert Accidental.color
      \revert Dots.color
      \revert NoteHead.color
@@ -35,9 +36,9 @@ grimoaldo = {
   \color { e16 fis16 g8 } c,8 b8. a16 g8 g8 fis8 r8 r8 b8 b8 |
   \color { c16 b16 c4~ c16 e16 d16 c16 b16 a16 } b16 a16 b8 r8 \color { r8 e16 dis16 e16 fis16 } |
   g8. fis16 e8 \color { e8. fis16 } dis8 e4. r4 r8 |
-  r4 e8 e8. fis16 d8 g8 c,8 r8 r4 r8 |
+  r4 e8 e8. fis16 d8 \color { g16 e16 } c8 r8 r4 r8 |
   r8 a8 a8 a16 gis16 a8 r8 r8 \color { a8 a8 a8. b16 c8 } |
-  b8. a16 g8 g4 fis8 e4. r4 r8 |
+  b8. a16 g8 \color { g8. a16 } fis8 e4. r4 r8 |
 }
 
 text = \lyricmode {
@@ -50,9 +51,9 @@ text = \lyricmode {
   pur dor -- me con -- ten -- to
   sot -- to l'om -- bra _ _ _ _ d'un _ fag _ gio
   d'un _ _ _ fag -- gio_o d'al -- lo _ _ ro
-  pur dor -- me con -- ten -- to
+  pur dor -- me con -- ten _ to
   sot -- to l'om _ bra
-  sot -- to l'om -- bra d'un fag -- gio_o d'al -- lo _ ro
+  sot -- to l'om -- bra d'un fag -- gio_o d'al -- lo _ _ ro
 }
 
 continuo = {
@@ -100,6 +101,10 @@ global = {
   \time 12/8
 }
 
+\paper {
+  system-system-spacing #'padding = #5
+}
+
 \score {
   <<
     <<
@@ -110,29 +115,48 @@ global = {
         \autoBeamOff
         \relative c' {
           \grimoaldo
+          \bar "|."
         }
-      
+
       }
       \addlyrics {
         \text
       }
     >>
-    \new Staff = "Continuo" {
-      \global
-      \set Staff.instrumentName = #"Continuo"
-      \clef bass
-      \set melismaBusyProperties = #'()
-      \relative c, {
-        \continuo
+
+    \new GrandStaff <<
+
+      \new Staff = "Realization" {
+        \global
+        \set Staff.instrumentName = #"Realization"
+        \clef "treble"
+        {
+          \repeat unfold 12 { s1. }
+          \bar "|."
+        }
       }
-    }
-    \new FiguredBass {
-      \figs
-    }
+
+      \new Staff = "Continuo" {
+        \global
+        \set Staff.instrumentName = #"Continuo"
+        \clef bass
+        \set melismaBusyProperties = #'()
+        \relative c, {
+          \continuo
+          \bar "|."
+        }
+      }
+
+      \new FiguredBass {
+        \figs
+      }
+
+    >>
   >>
 
   \layout { }
+
   \midi {
-    \tempo 4 = 50
+    \tempo 4 = 60
   }
 }
