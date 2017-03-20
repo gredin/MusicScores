@@ -47,6 +47,26 @@ jupiter = {
   R1*3
 }
 
+ornaments =  {
+  R1 |
+  sib4 do32 re mib8 do16 re4 r8 fa8 |
+  sol32 fa mib8 re16 mib32 re do8 sib16 la4 r4 |
+  do4 re16 do sib la do4 r8 fa8 |
+  re8 do8 sib8 la8 sol4 r4 |
+  sib4 do32 sib la8 sol16 la sol sib la re do fa8 |
+  la,8 \tuplet 3/2 { fa16 sol la } sol8. fa16 fa2 |
+  R1 |
+  fa'4 mib8. re16 mib4 r8 do8 |
+  la8 fa8 do'32 re mib8 do16 re4 r4 |
+  fa4 lab,8. lab16 sol4 r8 mib'8 |
+  mib8 re8 re8 do16 ( sib16 ) la16 sol16 fa8 r16 sib16 la16 sib16 |
+  do16 sib16 la sol fa re'16 do16 re16 mib16 re16 do sib la8. r16 |
+  fa'4 sol32 fa mib re do16 sib la4 r4 |
+  r4. sol'8 fa8 ( sib,8 sol8 ) mib'8 |
+  re8 \tuplet 3/2 { sib16 do re } do8. sib16 sib2 |
+  R1*3
+}
+
 text = \lyricmode {
   Where -- 'er you walk
   cool gales shall fan the glade
@@ -91,7 +111,7 @@ bassi = {
   composer = "G. F. Händel"
   poet = "William Congreve"
   opus = "HWV 58"
-  piece = "Opera"
+  piece = "Opéra"
   tagline = "" % no footer
 }
 
@@ -111,7 +131,7 @@ global = {
         \global
         \set Staff.instrumentName = #"Jupiter"
         \clef "treble_8"
-        \autoBeamOff
+        %\autoBeamOff
         \relative do' {
           \jupiter
           \bar "|."
@@ -126,16 +146,16 @@ global = {
     \new Staff = "Ornements" {
       \global
       \set Staff.instrumentName = #"Ornements"
-      \clef "treble"
-      {
-        \repeat unfold 19 { s1 }
+      \clef "treble_8"
+      \relative do' {
+        \ornaments
         \bar "|."
       }
     }
 
-    \new Staff = "Continuo" {
+    \new Staff = "Basse" {
       \global
-      \set Staff.instrumentName = #"Continuo"
+      \set Staff.instrumentName = #"Basse"
       \clef bass
       \set melismaBusyProperties = #'()
       \relative do, {
